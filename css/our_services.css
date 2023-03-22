@@ -1,0 +1,1033 @@
+/* =======================================================================================
+                                Common css start
+======================================================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    width: 1140px;
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+
+ul,ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+:root{
+    --font_raleway: 'Raleway', sans-serif;
+    --color_a: #FF3E54;
+    --color_b: #0E1F51;
+}
+
+.sub_button{
+    padding: 9px 18px;
+    background: var(--color_a);
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--color_a);
+    transition: all .4s linear;
+}
+
+.sub_button:hover{
+    background: transparent;
+    color: var(--color_a);
+    border: 1px solid var(--color_a);
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+.title h1{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    color: var(--color_b);
+    margin-bottom: 40px;
+}
+
+/* =======================================================================================
+                                Common css end
+======================================================================================= */
+/* =======================================================================================
+                                Navbar css start
+======================================================================================= */
+.navbar{
+    padding: 28px 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	font-family: var(--font_raleway);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--color_b);
+	padding: 5px 10px;
+	margin-right: 25px;
+	transition: all .3s linear;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    height: 4px;
+	width: 0;
+    background: var(--color_a);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all .2s linear;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	color: var(--color_a);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+	color: var(--color_a);
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item:last-child{
+    margin-right: 20px;
+}
+/* =======================================================================================
+                                Navbar css end
+======================================================================================= */
+/* =======================================================================================
+                                Heading_banner css start
+======================================================================================= */
+#heading_banner{
+    width: 100%;
+    padding: 100px 0;
+    background: var(--color_b);
+}
+
+#heading_banner .text{
+    text-align: center;
+}
+
+#heading_banner .text h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+#heading_banner .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+/* =======================================================================================
+                                Heading_banner css end
+======================================================================================= */
+/* =======================================================================================
+                                Banner css start
+======================================================================================= */
+#banner{
+    padding: 50px 0;
+}
+
+#banner .main{
+    align-items: center;
+}
+
+#banner .title{
+    text-align: start;
+}
+
+#banner .title h1{
+    margin-bottom: 20px;
+    line-height: 58px;
+}
+/* =======================================================================================
+                                Banner css end
+======================================================================================= */
+/* =======================================================================================
+                                About_part css start
+======================================================================================= */
+#about_part{
+    background: #F7F7F7;
+    padding: 100px 0;
+}
+
+#about_part .left .image img {
+	border-radius: 14px;
+	width: 100%;
+}
+
+#about_part .title{
+    text-align: left;
+}
+
+#about_part .title h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+#about_part .title p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+#about_part .customer {
+    padding: 15px 145px 15px 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#about_part .customer .image{
+    padding: 15px 17px;
+    border-radius: 10px;
+    background: #F7F7F7;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#about_part .customer .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+
+#about_part .customer .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+#about_part .customer .text a{
+    color: var(--color_a);
+}
+/* =======================================================================================
+                                About_part css end
+======================================================================================= */
+/* =======================================================================================
+                                Process_part css start
+======================================================================================= */
+#process_part{
+    padding: 100px 0;
+}
+
+#process_part .process_card{
+    background: #F7F7F7;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#process_part .process_card h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 50px;
+    color: var(--color_b);
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+#process_part .process_card .image{
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+
+#process_part .process_card h4{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color_b);
+    margin: 20px 0 40px;
+    position: relative;
+}
+
+#process_part .process_card h4::before{
+    content: "";
+    height: 6px;
+    width: 60px;
+    background: var(--color_a);
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(20px);
+}
+
+#process_part .process_card h4::after{
+    content: "";
+    height: 6px;
+    width: 20px;
+    background: var(--color_a);
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    transform: translateY(20px);
+}
+
+#process_part .process_card p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+/* =======================================================================================
+                                Process_part css end
+======================================================================================= */
+/* =======================================================================================
+                                Service_part css start
+======================================================================================= */
+#service_part{
+    background: #F7F7F7;
+    padding: 100px 0;
+}
+
+#service_part .left img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#service_part .right .title{
+    text-align: left;
+}
+
+#service_part .right .title h1{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+#service_part .right .title p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    width: 500px;
+    margin-bottom: 24px;
+}
+
+#service_part .right .vision{
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#service_part .right .vision .image{
+    padding: 15px;
+    background: rgba(255, 62, 84, .1);
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+#service_part .right .vision .text h4{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+#service_part .right .vision .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+
+#service_part .right .sub_button{
+    padding: 12px 24px;
+    font-size: 20px;
+    margin-top: 24px;
+}
+/* =======================================================================================
+                                Service_part css end
+======================================================================================= */
+/* =======================================================================================
+                                Expertice css start
+======================================================================================= */
+#expertice{
+    padding: 100px 0;
+}
+
+#expertice .row_gap{
+    row-gap: 24px;
+}
+
+#expertice .expertice_card{
+    background: #F7F7F7;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#expertice .expertice_card .image{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#expertice .expertice_card h4{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--color_b);
+    margin: 20px 0 40px;
+    position: relative;
+}
+
+#expertice .expertice_card h4::before{
+    content: "";
+    height: 6px;
+    width: 60px;
+    background: var(--color_a);
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(20px);
+}
+
+#expertice .expertice_card h4::after{
+    content: "";
+    height: 6px;
+    width: 20px;
+    background: var(--color_a);
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    transform: translateY(20px);
+}
+
+#expertice .expertice_card p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    width: 300px;
+}
+/* =======================================================================================
+                                Expertice css end
+======================================================================================= */
+/* =======================================================================================
+                                Leaders part css start
+======================================================================================= */
+#leaders_part{
+    background: #F7F7F7;
+    padding: 100px 0;
+}
+
+#leaders_part .team_leader img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#leaders_part .team_leader .text{
+    text-align: center;
+}
+
+#leaders_part .team_leader .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 30px 0 10px;
+    color: var(--color_a);
+}
+
+#leaders_part .team_leader .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+/* =======================================================================================
+                                Leaders part css end
+======================================================================================= */
+/* =======================================================================================
+                                Testimonials css start
+======================================================================================= */
+#testimonials{
+    padding: 100px 0 160px;
+}
+
+#testimonials .testimonials_slider{
+    position: relative;
+}
+
+#testimonials .testimonials_slider .slide{
+    height: 285px;
+    padding: 30px;
+    background: #f7e6e6;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    opacity: .5;
+}
+
+#testimonials .testimonials_slider .slide p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #252525;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#testimonials .testimonials_slider .slide h4{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_a);
+    margin-bottom: 1.6px;
+}
+
+#testimonials .testimonials_slider .slide h5{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+
+
+#testimonials .testimonials_slider .slick-track{
+    display: flex;
+    align-items: center;
+}
+
+#testimonials .testimonials_slider .slick-active{
+    height: 335px;
+    opacity: 1;
+}
+
+#testimonials .testimonials_slider .slick-active p{
+    margin: 40px 0 30px;
+}
+
+#testimonials .testimonials_slider .slick-active h4{
+    margin-bottom: 5px;
+}
+
+#testimonials .testimonials_slider .slide .quote{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#testimonials .testimonials_slider .slick-dots{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 40px);
+    display: flex;
+    margin: 0;
+}
+
+#testimonials .testimonials_slider .slick-dots li button{
+    margin: 0 10px;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--color_a);
+    background: transparent;
+}
+
+#testimonials .testimonials_slider .slick-dots .slick-active button{
+    background: var(--color_a);
+}
+/* =======================================================================================
+                                Testimonials css end
+======================================================================================= */
+/* =======================================================================================
+                                Lets_talk css start
+======================================================================================= */
+#lets_talk{
+    padding: 100px 0;
+    background: var(--color_b);
+}
+
+#lets_talk .title h1{
+    color: #fff;
+}
+
+/* #lets_talk .form_part{
+    height: 100%;
+} */
+
+#lets_talk .form_part form{
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#lets_talk .form_part form .input_design{
+    border: none;
+    background: #F7F7F7;
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+    padding: 15px 0 15px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#lets_talk .form_part form .input_design:focus{
+    outline: 0;
+}
+
+#lets_talk .form_part form textarea{
+    height: 132px;
+}
+
+#lets_talk .form_part form .sub_button{
+    margin-top: 10px;
+    width: 130px;
+}
+
+#lets_talk .find_us {
+    background: #fff;
+    padding: 35px 30px 30px;
+    border-radius: 10px;
+}
+
+#lets_talk .find_us .address{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#lets_talk .find_us .address i{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: var(--color_a);
+    background: #F7F7F7;
+    text-align: center;
+    line-height: 70px;
+    margin-right: 15px;
+}
+
+#lets_talk .find_us .address .text{
+    display: grid;
+}
+
+#lets_talk .find_us .address .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color_a);
+    
+}
+
+#lets_talk .find_us .address .text a{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+
+#lets_talk .find_us .address .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+
+#lets_talk .find_us .social h4{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--color_b);
+    margin: 20px 0 30px;
+}
+
+#lets_talk .find_us .social .icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+#lets_talk .find_us .social .icon i{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: var(--color_a);
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 22px;
+    transition: all .3s linear;
+}
+
+#lets_talk .find_us .social i:hover{
+    background: #F7F7F7;
+    color: var(--color_a);
+}
+/* =======================================================================================
+                                Lets_talk css end
+======================================================================================= */
+/* =======================================================================================
+                                Blog_part css start
+======================================================================================= */
+#blog_part{
+    padding: 100px 0;
+    background: #F7F7F7;
+}
+
+#blog_part .blog_card{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(14, 31, 81, 0.2);
+    transition: all .4s linear;
+}
+
+#blog_part .blog_card:hover{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px rgba(10, 21, 56, 0.2);
+}
+
+#blog_part .blog_card img{
+    border-radius: 10px;
+}
+
+#blog_part .blog_card h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color_a);
+    margin: 20px 0;
+    width: 285px;
+}
+
+#blog_part .blog_card .profile_p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog_part .blog_card .profile_p .profile{
+    display: flex;
+    align-items: center;
+}
+
+#blog_part .blog_card .profile_p .profile h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+    margin-left: 6px;
+}
+
+#blog_part .blog_card .profile_p p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(37, 37, 37, .7);
+    text-align: center;
+}
+/* =======================================================================================
+                                Blog_part css end
+======================================================================================= */
+/* =======================================================================================
+                                Quote_banner css start
+======================================================================================= */
+#quote_banner{
+    padding: 100px 0;
+}
+
+#quote_banner .banner{
+    width: 945px;
+    height: 295px;
+    background: url(../images/home_page/quote_banner.jpg) no-repeat ;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#quote_banner .banner .overlay{
+    background: rgba(14, 31, 81, .75);
+    /* height: 100%;
+    width: 100%; */
+    padding: 60px 137px;
+}
+
+#quote_banner .banner .overlay .text{
+    text-align: center;
+}
+
+#quote_banner .banner .overlay .text h3{
+    margin-bottom: 30px;
+    color: #F7F7F7;
+    width: 675px;
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+#quote_banner .banner .overlay .text .sub_button:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+/* =======================================================================================
+                                Quote_banner css end
+======================================================================================= */
+/* =======================================================================================
+                                Footer_part css start
+======================================================================================= */
+#footer_part{
+    padding: 100px 0;
+    background: var(--color_b);
+}
+
+#footer_part h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: #F7F7F7;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#footer_part h2::before{
+    content: '';
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--color_a);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(20px);
+}
+
+#footer_part .follow_us p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 20px 0 30px;
+}
+
+#footer_part .follow_us .icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_part .follow_us .icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: var(--color_a);
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#footer_part .services li a{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+#footer_part .career h2{
+    margin-bottom: 55px;
+}
+
+#footer_part .career .dev{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footer_part .career .dev i{
+    width: 68px;
+    height: 68px;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 68px;
+    color: var(--color_a);
+    margin-right: 20px;
+}
+
+#footer_part .career .dev .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+#footer_part .career .dev .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+#footer_part .subscribe p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 248px;
+}
+
+#footer_part .subscribe h2{
+    margin-bottom: 55px;
+}
+
+#footer_part .subscribe form input{
+    padding: 12px 0 12px 24px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    margin: 30px 0 20px;
+}
+
+#footer_part .subscribe form input:focus{
+    outline: none;
+}
+
+#footer_part .subscribe form {
+    text-align: right;
+}
+
+#footer_part .subscribe form .sub_button{
+    padding: 12px 24px;
+}
+
+#footer_part .subscribe form .sub_button:hover{
+    background: #fff;
+}
+/* =======================================================================================
+                                Footer_part css end
+======================================================================================= */

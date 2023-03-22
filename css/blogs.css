@@ -1,0 +1,563 @@
+/* =======================================================================================
+                                Common css start
+======================================================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    width: 1140px;
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+}
+
+ul,ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+:root{
+    --font_raleway: 'Raleway', sans-serif;
+    --color_a: #FF3E54;
+    --color_b: #0E1F51;
+}
+
+.sub_button{
+    padding: 9px 18px;
+    background: var(--color_a);
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--color_a);
+    transition: all .4s linear;
+}
+
+.sub_button:hover{
+    background: transparent;
+    color: var(--color_a);
+    border: 1px solid var(--color_a);
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+.title h1{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    color: var(--color_b);
+    margin-bottom: 40px;
+}
+
+/* =======================================================================================
+                                Common css end
+======================================================================================= */
+/* =======================================================================================
+                                Navbar css start
+======================================================================================= */
+.navbar{
+    padding: 28px 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+	font-family: var(--font_raleway);
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--color_b);
+	padding: 5px 10px;
+	margin-right: 25px;
+	transition: all .3s linear;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    height: 4px;
+	width: 0;
+    background: var(--color_a);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all .2s linear;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	color: var(--color_a);
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+	color: var(--color_a);
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-item:last-child{
+    margin-right: 20px;
+}
+/* =======================================================================================
+                                Navbar css end
+======================================================================================= */
+/* =======================================================================================
+                                Heading_banner css start
+======================================================================================= */
+#heading_banner{
+    width: 100%;
+    padding: 100px 0;
+    background: var(--color_b);
+}
+
+#heading_banner .text{
+    text-align: center;
+}
+
+#heading_banner .text h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+#heading_banner .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+/* =======================================================================================
+                                Heading_banner css end
+======================================================================================= */
+/* =======================================================================================
+                                Blog_part2 css start
+======================================================================================= */
+#blog_part2{
+    padding: 100px 0;
+}
+
+#blog_part2 .blog_card{
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(255, 62, 84, 0.2);
+    border-radius: 10px;
+}
+
+#blog_part2 .blog_card .blog_up_img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#blog_part2 .blog_card h2{
+    width: 100%;
+}
+
+#blog_part2 .blog_card p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252525;
+    opacity: 0.7;
+    margin: 20px 0 10px;
+}
+
+#blog_part2 .blog_card h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color_a);
+}
+
+#blog_part2 .blog_card .profile_p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#blog_part2 .blog_card .profile_p .profile{
+    display: flex;
+    align-items: center;
+}
+
+#blog_part2 .blog_card .profile_p .profile h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+    margin-left: 10px;
+}
+
+#blog_part2 .blog_card .profile_p p{
+    margin: 0;
+}
+
+#blog_part2 .blogs .blog_card2{
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(255, 62, 84, 0.2);
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+#blog_part2 .blogs .blog_card2:last-child{
+    margin-bottom: 0;
+}
+
+#blog_part2 .blogs .blog_card2 img{
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#blog_part2 .blogs .blog_card2 .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252525;
+    opacity: 0.7;
+}
+
+#blog_part2 .blogs .blog_card2 .text h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color_a);
+    margin: 10px 0 55px;
+}
+
+#blog_part2 .blogs .blog_card2 .text .profile_p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog_part2 .blogs .blog_card2 .text .profile_p .profile{
+    display: flex;
+    align-items: center;
+}
+
+#blog_part2 .blogs .blog_card2 .text .profile_p .profile img{
+    margin-right: 6px;
+}
+
+#blog_part2 .blogs .blog_card2 .text .profile_p .profile h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+}
+/* =======================================================================================
+                                Blog_part2 css end
+======================================================================================= */
+/* =======================================================================================
+                                Blog_part css start
+======================================================================================= */
+#blog_part{
+    padding: 100px 0;
+    background: #F7F7F7;
+}
+#blog_part .row_gap{
+    row-gap: 24px;
+}
+
+#blog_part .blog_card{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(14, 31, 81, 0.2);
+    transition: all .4s linear;
+}
+
+#blog_part .blog_card:hover{
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px rgba(10, 21, 56, 0.2);
+}
+
+#blog_part .blog_card img{
+    border-radius: 10px;
+}
+
+#blog_part .blog_card h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color_a);
+    margin: 20px 0;
+    width: 100%;
+}
+
+#blog_part .blog_card .profile_p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blog_part .blog_card .profile_p .profile{
+    display: flex;
+    align-items: center;
+}
+
+#blog_part .blog_card .profile_p .profile h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color_b);
+    margin-left: 6px;
+}
+
+#blog_part .blog_card .profile_p p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(37, 37, 37, .7);
+    text-align: center;
+}
+/* =======================================================================================
+                                Blog_part css end
+======================================================================================= */
+/* =======================================================================================
+                                Quote_banner css start
+======================================================================================= */
+#quote_banner{
+    padding: 100px 0;
+}
+
+#quote_banner .banner{
+    width: 945px;
+    height: 295px;
+    background: url(../images/home_page/quote_banner.jpg) no-repeat ;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#quote_banner .banner .overlay{
+    background: rgba(14, 31, 81, .75);
+    /* height: 100%;
+    width: 100%; */
+    padding: 60px 137px;
+}
+
+#quote_banner .banner .overlay .text{
+    text-align: center;
+}
+
+#quote_banner .banner .overlay .text h3{
+    margin-bottom: 30px;
+    color: #F7F7F7;
+    width: 675px;
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+}
+
+#quote_banner .banner .overlay .text .sub_button:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+/* =======================================================================================
+                                Quote_banner css end
+======================================================================================= */
+/* =======================================================================================
+                                Footer_part css start
+======================================================================================= */
+#footer_part{
+    padding: 100px 0;
+    background: var(--color_b);
+}
+
+#footer_part h2{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: #F7F7F7;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#footer_part h2::before{
+    content: '';
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--color_a);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(20px);
+}
+
+#footer_part .follow_us p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 20px 0 30px;
+}
+
+#footer_part .follow_us .icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_part .follow_us .icon i{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: var(--color_a);
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#footer_part .services li a{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+#footer_part .career h2{
+    margin-bottom: 55px;
+}
+
+#footer_part .career .dev{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footer_part .career .dev i{
+    width: 68px;
+    height: 68px;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 68px;
+    color: var(--color_a);
+    margin-right: 20px;
+}
+
+#footer_part .career .dev .text h3{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color_a);
+    margin-bottom: 10px;
+}
+
+#footer_part .career .dev .text p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+#footer_part .subscribe p{
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 248px;
+}
+
+#footer_part .subscribe h2{
+    margin-bottom: 55px;
+}
+
+#footer_part .subscribe form input{
+    padding: 12px 0 12px 24px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--font_raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    margin: 30px 0 20px;
+}
+
+#footer_part .subscribe form input:focus{
+    outline: none;
+}
+
+#footer_part .subscribe form {
+    text-align: right;
+}
+
+#footer_part .subscribe form .sub_button{
+    padding: 12px 24px;
+}
+
+#footer_part .subscribe form .sub_button:hover{
+    background: #fff;
+}
+/* =======================================================================================
+                                Footer_part css end
+======================================================================================= */
