@@ -30,5 +30,5 @@ $('.testimonials_slider').slick({
 // ============================slick slider js for testimonials part end=======================
 
 // ============================mix it up js for our_work part start============================
-var mixer = mixitup('.work_part');
+var mixer = mixitup('.portfolio_work');
 // ============================mix it up js for our_work part end==============================

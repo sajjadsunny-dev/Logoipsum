@@ -9,7 +9,9 @@
 .container{
     width: 1140px;
 }
-
+.row_gap{
+    row-gap: 24px;
+}
 h1,h2,h3,h4,h5,p{
     margin: 0;
 }
@@ -199,41 +201,15 @@ a {
 
 #our_work .work_part .portfolio_work {
     margin: 50px 0;
-    text-align: left;
 }
 
-#our_work .work_part .portfolio_work .sajjad{
-    display: inline-block;
-    gap: 25px;
+#our_work .work_part .portfolio_work img {
+    width: 100%;
+    border-radius: 10px;
 }
-
-#our_work .work_part .portfolio_work .sajjad img{
-    border-radius: 7px;
-}
-
-#our_work .work_part .portfolio_work .sajjad .image1{
-    width: 755px;
-    height: 416px;
-}
-
-#our_work .work_part .portfolio_work .sajjad .image2{
-    width: 355px;
-    height: 416px;
-}
-
-#our_work .work_part .portfolio_work .sajjad .image3{
-    width: 255px;
-    height: 416px;
-}
-
-#our_work .work_part .portfolio_work .sajjad .image4{
-    width: 360px;
-    height: 416px;
-}
-
-#our_work .work_part .portfolio_work .sajjad .image5{
-    width: 455px;
-    height: 416px;
+#our_work .work_part .portfolio_work img:hover {
+    width: 100%;
+    border-radius: 10px;
 }
 /* =======================================================================================
                                 Our_work css end
